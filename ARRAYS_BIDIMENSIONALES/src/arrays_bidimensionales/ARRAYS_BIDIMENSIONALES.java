@@ -25,8 +25,8 @@ public class ARRAYS_BIDIMENSIONALES {
             }
             
         }
-        
-        for (int ren []:notas)
+        //por foreach(acabar para imprimirlos en orden
+        /*        for (int ren []:notas)
             
         {                System.out.println(" ");
 
@@ -36,8 +36,8 @@ public class ARRAYS_BIDIMENSIONALES {
                 System.out.println(nota+"");
             }
             
-        }
-    /*  for (int ren= 0; ren<notas.length ; ren++)
+        }*/
+      for (int ren= 0; ren<notas.length ; ren++)
         {
             System.out.println("");
             for (int col = 0; col < notas[ren].length; col++)
@@ -45,8 +45,7 @@ public class ARRAYS_BIDIMENSIONALES {
             {
                 System.out.print(notas[ren][col]+" ");
         }
-        
-    }*/
+    }
     
     }
 }
