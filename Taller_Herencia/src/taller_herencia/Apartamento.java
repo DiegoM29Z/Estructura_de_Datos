@@ -11,10 +11,12 @@ public class Apartamento  extends SuperClase {
         this.administracion = administracion;
         this.estrato = estrato;
     }
-    
+  
+   
     public void Datos_Apartamento()
     {
-        
+         int a= this.estrato/2;
+        System.out.println(""+a);
         if (this.administracion==true)
         {
             System.out.println("la administracion si la pago");
