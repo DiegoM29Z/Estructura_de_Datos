@@ -24,17 +24,17 @@ public class Samsung extends Movil {
         }
         else 
         {
-            String dec="\tel dispositivo no posee identificador tiene huella digital";
+            String dec="\tEl dispositivo no posee identificador tiene huella digital";
             return dec;
         }
     }
 public void mostrarDatos()
         {
-          
+            System.out.println("\n______ ALMACÉN WORLD TECHNOLOGY ________");
             super.mostrarDatos();
-            System.out.println("\talmacenamiento del dispositivo: "+this.almacenamiento);
-             System.out.println("\thuellas dactilar: "+this.huella);
-         
+            System.out.println("\tAlmacenamiento del dispositivo: "+this.almacenamiento);
+             System.out.println("\tHuellas dactilar: "+this.huella);
+        
            
         }
 

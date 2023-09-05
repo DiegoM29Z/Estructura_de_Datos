@@ -62,10 +62,11 @@ public class Movil extends Dispositivo {
 
  public void mostrarDatos()
         {
+            System.out.println("\n______ ALMACÉN WORLD TECHNOLOGY ________");
             super.mostratdatosdispositivo();
-            System.out.println("\tprocesador del dispositivo: "+this.procesador);
-             System.out.println("\tram del dispositivo: "+this.ram);
-            System.out.println("\tcamara del dispositivo: "+this.camara);
+            System.out.println("\tProcesador del dispositivo: "+this.procesador);
+             System.out.println("\tRam del dispositivo: "+this.ram);
+            System.out.println("\tCamara del dispositivo: "+this.camara);
            
         }
 

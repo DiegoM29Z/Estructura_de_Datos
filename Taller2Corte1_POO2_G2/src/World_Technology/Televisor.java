@@ -25,17 +25,19 @@ public class Televisor extends Dispositivo {
         }
         else 
         {
-            String dec="\tel dispositivo no posee plataformas de streaming";
+            String dec="\tEl dispositivo no posee plataformas de streaming";
             return dec;
         }
     }
     
        public void mostrsDatos()
        {
+             System.out.println("\n______ ALMACÉN WORLD TECHNOLOGY ________");
            super.mostratdatosdispositivo();
-           System.out.println("\ttamaño del televisor: "+this.tamaño);
-                   System.out.println("\tresolucion del televisor: "+this.resolucion);
-                           System.out.println("\ttipo del televisor: "+this.tipo);
-                                   System.out.println("\tstreaming del televisor: "+this.streamig);
+           System.out.println("\tTamaño del televisor: "+this.tamaño);
+                   System.out.println("\tResolucion del televisor: "+this.resolucion);
+                           System.out.println("\tTipo del televisor: "+this.tipo);
+                                   System.out.println("\tStreaming del televisor: "+this.streamig);
+                                  
        }
 }

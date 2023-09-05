@@ -41,8 +41,8 @@ public class Dispositivo {
      
      public void mostratdatosdispositivo()
      {
-         System.out.println("\n\tmarca del dispositivo: "+this.marca);
-         System.out.println("     \tserial del dispositivo: "+this.serial);
-         System.out.println("\tprecio del dispositivo: "+this.precio);
+         System.out.println("\n\tMarca del dispositivo: "+this.marca);
+         System.out.println("     \tSerial del dispositivo: "+this.serial);
+         System.out.println("\tPrecio del dispositivo:$"+this.precio);
      }
 }
