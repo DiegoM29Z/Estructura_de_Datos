@@ -18,7 +18,10 @@ String menu[]={"1. Registro de Moviles\n",
 "2.Registro de Televisores\n" ,
 "3.Autores"};
 
-
+        for (int i = 0; i < tam; i++)
+        {
+            
+        
 int opcion=JOptionPane.showOptionDialog(null, "******* ALMACÉN WORLD TECHNOLOGY ********", "Elige...", 0,JOptionPane.QUESTION_MESSAGE, null, menu, "");
 
 
@@ -26,41 +29,23 @@ switch (opcion)
         {
             case 0:
            
-               /* for (int i = 0; i < moviles.length; i++)
-                {
-                    Movil ob=new Movil(moviles[i].getProcesador(), moviles  [i].getRam(), moviles[i].isCamara(), moviles[i].getMarca(), (int) moviles[i].getPrecio(), moviles[i].getSerial()); 
-                   
-                    ob.setProcesador(JOptionPane.showInputDialog("ingrese el procesador del dispositivo"));
-                    ob.setRam(Integer.parseInt(JOptionPane.showInputDialog("ingrese la ram del dipositivo")));
-                    
-                   
-                    ob.setCamara(Boolean.parseBoolean(JOptionPane.showInputDialog("tiene camara: true o false")));
-                    ob.setMarca(JOptionPane.showInputDialog("ingrese la marca del dispositivo"));
-                   
-                   
-                    
-                    ob.setPrecio(Double.parseDouble(JOptionPane.showInputDialog("ingrese el precio del dispositivo")));
-                    
-                    ob.setSerial(Integer.parseInt(JOptionPane.showInputDialog("ingrese el serial del dispositivo ")));
-               
-           
-            
-            moviles[i]=ob;}*/
+             
          
             
           String procesador=JOptionPane.showInputDialog("ingrese el procesador del dispositivo");
           int ram=Integer.parseInt(JOptionPane.showInputDialog("ingresa la ram del dispositivo "));
-          boolean camara=Boolean.parseBoolean(JOptionPane.showInputDialog("tiene camara: true o false"));
+         
           String marca=JOptionPane.showInputDialog("ingrese la marca del dispositivo");
           double precio=Double.parseDouble(JOptionPane.showInputDialog("ingrese el precio del dispositivo"));
           int serial=Integer.parseInt(JOptionPane.showInputDialog("ingrese el serial del dispositivo "));
+           boolean camara=Boolean.parseBoolean(JOptionPane.showInputDialog("tiene camara: true o false"));
           
            Movil ob=new Movil(procesador, ram, camara, marca, serial, precio);
-          
-          boolean decicion= Boolean.parseBoolean(JOptionPane.showInputDialog("camara frontal true o false"));
-            String cf= ob.c(decicion);
-           ob.mostrarDatos();
-             System.out.println(cf);
+          moviles[i]=ob;
+          ob.mostrarDatos();
+           boolean camarafrontal=Boolean.parseBoolean(JOptionPane.showInputDialog("tiene camara frontal: true o false"));
+          String cf=ob.c(camara);
+                System.out.println(cf);
                     
              
             
@@ -83,11 +68,11 @@ switch (opcion)
                 
                 
                 Samsung objSamsung=new Samsung(almacenamiento, huella, procesador1, ram1, camara1, marca1, serial1, precio1);
-                 
+                 smg[i]=objSamsung;
                  String hd=objSamsung.huellaDig(huella);
                   objSamsung.mostrarDatos();
                   System.out.println(""+hd);
-                System.out.println("samsung");
+               
                 break;
                   
             
@@ -101,21 +86,22 @@ switch (opcion)
           double precio2=Double.parseDouble(JOptionPane.showInputDialog("ingrese el precio del dispositivo"));
           int serial2=Integer.parseInt(JOptionPane.showInputDialog("ingrese el serial del dispositivo "));
                 Televisor objTelevisor=new Televisor(tamaño, resolucion, tipo, streaming, marca2, serial2, precio2);
-             
+             tv[i]=objTelevisor;
                 String PS=objTelevisor.PlataformaStream(streaming);
                 objTelevisor.mostrsDatos();
                 System.out.println("\n"+PS);
-                      System.out.println("televisores");
+                      
                 break;
                   
             
             case 3:
-                      System.out.println("diego muñoz");
+                      System.out.println("Diego Fernando Muñoz"+"\nMaicol Victoria "+"\n");
+                      
                 break;
             default:
                 throw new AssertionError();
         }
-
+        }
 
 
 

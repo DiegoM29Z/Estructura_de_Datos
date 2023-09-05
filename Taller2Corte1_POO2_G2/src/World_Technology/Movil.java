@@ -48,7 +48,7 @@ public class Movil extends Dispositivo {
        int x=0;
         if (c==true)
         {
-            x=Integer.parseInt(JOptionPane.showInputDialog("cuanto mg tiene"));
+            x=Integer.parseInt(JOptionPane.showInputDialog("cuanto mg tiene la camara frontal"));
            String dec="\ttiene camara frontal y es de "+x+" Megapixeles";
            return dec;
         }
