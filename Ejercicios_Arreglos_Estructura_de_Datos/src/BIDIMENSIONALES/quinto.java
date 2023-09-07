@@ -42,7 +42,7 @@ public class quinto {
            
         }
         
-        // Mostrar el resultado
+        
         if (Nula>=1) {
             System.out.println("La matriz es nula");
         } else {

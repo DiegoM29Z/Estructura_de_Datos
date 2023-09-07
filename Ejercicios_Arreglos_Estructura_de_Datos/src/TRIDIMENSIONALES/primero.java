@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
 
 public class primero {
 
-   //27
+ 
     public static void main(String[] args) {
         int[][][] compañia = new int[8][6][7];
 

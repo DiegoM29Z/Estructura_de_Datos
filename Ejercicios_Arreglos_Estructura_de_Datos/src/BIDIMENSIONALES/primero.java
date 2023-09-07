@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 
 
 public class primero {
-  //14
+
     
     public static void main(String[] args) {
   

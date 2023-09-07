@@ -37,7 +37,7 @@ public class segundo {
             }
         }
 
-        // Imprimir los resultados
+       
         System.out.println("La mayor producción fue de " + mayorProduccion + " plantas.");
         System.out.println("Se alcanzó en el día " + (diaMayorProduccion + 1) + ".");
         System.out.println("La planta que la produjo es la planta " + (plantaMayorProduccion + 1) + ".");
